@@ -1,0 +1,11 @@
+const userModel = require('../models/userModel');
+
+const getAllUsers = async () => {
+  return await userModel.getAllUsers();
+};
+
+const addUser = async (name, email, membership_start_date) => {
+  return await userModel.addUser(name, email, membership_start_date);
+};
+
+module.exports = { getAllUsers, addUser };
